@@ -1,32 +1,38 @@
 import { FileBarChart, FilePieChart, Info, LayoutDashboard, LogOut, UserPlus } from "lucide-react";
 
-
 export const element = [
     {
         icon:  <FileBarChart/>,
-        name: 'Inicio'
+        name: 'Inicio',
+        layoutRoute:'/home/begin'
+        
     },
     {
         icon:  <LayoutDashboard/>,
-        name: 'Painel'
+        name: 'Painel',
+        layoutRoute:'/home/dashboard'
     },
     {
         icon:  <UserPlus/>,
-        name: 'Adicionar'
+        name: 'Adicionar',
+        layoutRoute:'/home/more'
     },
     {
         icon:  <FilePieChart/>,
-        name: 'Atividade'
+        name: 'Atividade',
+        layoutRoute:'/home/dashboard'
     },
 ]
 
 export const elementBottom= [
     {
         icon:  <Info/>,
-        name: 'Informação'
+        name: 'Informação',
+        layoutRoute:'/home/dashboard'
     },
     {
         icon:  <LogOut/>,
-        name: 'Sair'
+        name: 'Sair',
+        layoutRoute:'/home/dashboard'
     }
 ]
